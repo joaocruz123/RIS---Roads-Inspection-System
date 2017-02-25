@@ -1,19 +1,3 @@
-# RIS - Roads Inspection System
-
-System developed for the discipline of Special Topics in Software Engineering.
-
-# Version
-
-The system is under development and is currently in Version 1.0
-
-# Description
-
-This project aims to create a mobile application for monitoring buses in the city of castanhal that do not properly comply with their routes.
-
-# Requirements
-
-Intel XDK (Android Development)
-
 Blank HTML App Designer Template for Building Mobile Cordova Web Apps
 =====================================================================
 
