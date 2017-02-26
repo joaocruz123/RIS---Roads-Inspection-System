@@ -23,6 +23,16 @@
          uib_sb.toggle_sidebar($(".uib_w_3"));  
     });
     
+        /* button  .uib_w_10 */
+    $(document).on("click", ".uib_w_10", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $(".uib_w_11").modal("toggle");  
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
