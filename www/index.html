@@ -72,6 +72,7 @@
         <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
         <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
     </head>
 
     <body>
@@ -115,21 +116,21 @@
                             <div class="widget-container content-area vertical-col">
                                 <div class="table-thing widget uib_w_5 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control label-top-left">Nome:</label>
-                                    <input class="wide-control form-control default input-sm" type="text" placeholder="Seu primeiro nome">
+                                    <input class="wide-control form-control default" type="text" placeholder="Seu primeiro nome">
                                 </div>
                                 <div class="table-thing widget uib_w_6 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control label-top-left">Sobrenome:</label>
-                                    <input class="wide-control form-control default input-sm" type="text" placeholder="Seu ultimo nome">
+                                    <input class="wide-control form-control default" type="text" placeholder="Seu ultimo nome">
                                 </div>
                                 <div class="table-thing widget uib_w_7 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control label-top-left">Email:</label>
-                                    <input class="wide-control form-control default input-sm" type="email" placeholder="seuemail@exemplo.com">
+                                    <input class="wide-control form-control default" type="email" placeholder="seuemail@exemplo.com">
                                 </div>
                                 <div class="table-thing widget uib_w_8 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
                                     <label class="narrow-control label-top-left">Senha:</label>
-                                    <input class="wide-control form-control default input-sm" type="password" placeholder="********">
+                                    <input class="wide-control form-control default" type="password" placeholder="********">
                                 </div>
-                                <button class="btn widget uib_w_9 default-graphic-text btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">CADASTRAR <i class="el el-file-edit button-icon-right" data-position="right"></i>
+                                <button class="btn widget uib_w_9 default-graphic-text btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">CADASTRAR <i class="el el-file-edit button-icon-right" data-position="right"></i>
                                 </button>
                                 <span class="uib_shim"></span>
                             </div>
@@ -159,7 +160,7 @@
                                         <label class="narrow-control label-top-left">Senha:</label>
                                         <input class="wide-control form-control default input-sm" type="password" placeholder="*******">
                                     </div>
-                                    <button class="btn widget uib_w_14 d-margins default-graphic-text btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Login<i class="glyphicon glyphicon-ok button-icon-right" data-position="right"></i>
+                                    <button class="btn widget uib_w_14 d-margins default-graphic-text btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Login <i class="glyphicon glyphicon-ok button-icon-right" data-position="right"></i>
                                     </button>
                                     <span class="uib_shim"></span>
                                 </div>
@@ -168,6 +169,60 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="upage hidden" id="painel_user">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_33" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_42 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-off" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="principal">
+
+                    <div class="card_grid widget uib_w_34 wrapping-col d-margins flex-basis-34" data-uib="layout/card_grid" data-ver="0">
+                        <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_35 section-dimension-35" data-uib="layout/card" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_39 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                                <img src="images/map-2.png">
+                                <span class="uib-caption">Localização do Ônibus</span>
+                            </a>
+
+                        </div>
+                        <div class="widget widget-container content-area vertical-col uib-card uib_w_36 section-dimension-36 cpad-0" data-uib="layout/card" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_40 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                            data-ver="0">
+                                <img src="images/megaphone-1.png">
+                                <span class="uib-caption">Denúncia</span>
+                            </a>
+                        </div>
+                        <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_37 section-dimension-37" data-uib="layout/card" data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_41 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                            data-ver="0">
+                                <img src="images/users-1.png">
+                                <span class="uib-caption">Chat</span>
+                            </a>
+                        </div>
+                        <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_38 section-dimension-38" data-uib="layout/card" data-ver="0"></div>
+                    </div>
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_28" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_29 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_30 menu_painel btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="el el-info-circle button-icon-top" data-position="top"></i>Sobre</button>
+                            <button class="btn widget uib_w_31 menu_painel btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-home button-icon-top" data-position="top"></i>Principal</button>
+                            <button class="btn widget uib_w_32 menu_painel btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-cog button-icon-top" data-position="top"></i>Ajustes</button>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div id="sobre" class="upage-content vertical-col left hidden"></div>
             </div>
         </div>
     </body>
