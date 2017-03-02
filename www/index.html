@@ -73,6 +73,9 @@
         <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script type="application/javascript" src="google_maps/google_maps.js"></script>
+        <script type="application/javascript" src="camera/cordova-cam.js"></script>
     </head>
 
     <body>
@@ -176,7 +179,14 @@
             <div class="upage-outer">
                 <div class="uib-header header-bg container-group inner-element uib_w_33" data-uib="layout/header" data-ver="0">
                     <h2></h2>
-                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="widget uib_w_43 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/name-Header.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
                     <div class="widget-container content-area horiz-area wrapping-col left"></div>
                     <div class="widget-container content-area horiz-area wrapping-col right">
                         <button class="btn widget uib_w_42 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-off" data-position="icon only"></i>
@@ -194,15 +204,13 @@
 
                         </div>
                         <div class="widget widget-container content-area vertical-col uib-card uib_w_36 section-dimension-36 cpad-0" data-uib="layout/card" data-ver="0">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_40 d-margins media-button-text-bottom" data-uib="media/graphic_button"
-                            data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_40 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
                                 <img src="images/megaphone-1.png">
                                 <span class="uib-caption">Denúncia</span>
                             </a>
                         </div>
                         <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_37 section-dimension-37" data-uib="layout/card" data-ver="0">
-                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_41 d-margins media-button-text-bottom" data-uib="media/graphic_button"
-                            data-ver="0">
+                            <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_41 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
                                 <img src="images/users-1.png">
                                 <span class="uib-caption">Chat</span>
                             </a>
@@ -223,6 +231,60 @@
                     <div class="widget-container content-area horiz-area wrapping-col right"></div>
                 </div>
                 <div id="sobre" class="upage-content vertical-col left hidden"></div>
+                <div id="localizacao" class="upage-content vertical-col left hidden">
+                    <div class="widget uib_w_44 maps-size d-margins" data-uib="media/google_maps" data-ver="0" data-rpath="null" data-zoom="8" data-center-longitude="-47.917500" data-center-latitude="-1.297912"></div>
+                    <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_11 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                    <div class="widget uib_w_45 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.47282713955!2d-47.913704246595515!3d-1.2887316461659837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5a671700f27fb%3A0xd91b2201cb8d6b7e!2sJaderl%C3%A2ndia%2C+Castanhal+-+PA!5e0!3m2!1spt-BR!2sbr!4v1488478368271"></iframe>
+                    </div>
+                </div>
+                <div id="denuncia" class="upage-content vertical-col left hidden">
+                    <div class="table-thing widget uib_w_46 d-margins label-text" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                        <label class="narrow-control label-top-left">Sua Denúncia:</label>
+                        <textarea rows="2" class="wide-control form-control" wrap="soft" placeholder="Comente o houve"></textarea>
+                    </div>
+                    <div class="card_grid widget uib_w_47 wrapping-col d-margins flex-basis-47" data-uib="layout/card_grid" data-ver="0">
+                        <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_48 section-dimension-48" data-uib="layout/card" data-ver="0">
+                            <button class="btn widget btn-default uib_w_51" data-uib="twitter%20bootstrap/button" data-ver="1" onclick="capturePhoto('.uib_w_51 img')">Camera</button>
+                            <div class="widget uib_w_52 d-margins" data-uib="media/file_input" data-ver="0">
+                                <input type="file" name="Importar Imagem">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="table-thing widget uib_w_53 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left">Nº de Identificação do Ônibus:</label>
+                        <input class="wide-control form-control default" type="text" placeholder="UM-1023476">
+                    </div>
+                    <div class="table-thing widget uib_w_54 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left">Local:</label>
+                        <input class="wide-control form-control default" type="text" placeholder="Bairro Estrela">
+                    </div>
+                    <div class="table-thing widget uib_w_55 d-margins label-text" data-uib="twitter%20bootstrap/select" data-ver="1">
+                        <label class="narrow-control label-top-left">Empresa:</label>
+                        <select class="wide-control form-control default">
+                            <option>Transportes Cidade Nova</option>
+                            <option>Mayara Transportes</option>
+                            <option>Salve Maria</option>
+                            <option>Ruth Transportes</option>
+                        </select>
+                    </div>
+                    <div class="table-thing widget uib_w_56 d-margins label-text" data-uib="twitter%20bootstrap/input" data-ver="1">
+                        <label class="narrow-control label-top-left">Horário:</label>
+                        <input class="wide-control form-control default" type="time" placeholder="12:30">
+                    </div>
+                    <button class="btn widget uib_w_57 d-font default-graphic-text btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Enviar<i class="glyphicon glyphicon-download-alt button-icon-right" data-position="right"></i>
+                    </button>
+                </div>
+                <div id="Chat" class="upage-content vertical-col left hidden"></div>
             </div>
         </div>
     </body>

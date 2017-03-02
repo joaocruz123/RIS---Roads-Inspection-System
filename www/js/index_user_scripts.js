@@ -83,6 +83,20 @@
          activate_page("#mainpage"); 
     });
     
+        /* graphic button  Localização do Ônibus */
+    $(document).on("click", ".uib_w_39", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#localizacao"); 
+    });
+    
+        /* graphic button  Denúncia */
+    $(document).on("click", ".uib_w_40", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#denuncia"); 
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
