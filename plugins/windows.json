@@ -9,7 +9,8 @@
     "installed_plugins": {
         "cordova-plugin-device": {},
         "cordova-plugin-splashscreen": {},
-        "cordova-plugin-statusbar": {}
+        "cordova-plugin-statusbar": {},
+        "cordova-plugin-camera": {}
     },
     "dependent_plugins": {}
 }

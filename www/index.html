@@ -187,7 +187,10 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_77 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+                    </div>
                     <div class="widget-container content-area horiz-area wrapping-col right">
                         <button class="btn widget uib_w_42 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-off" data-position="icon only"></i>
                         </button>
@@ -284,7 +287,73 @@
                     <button class="btn widget uib_w_57 d-font default-graphic-text btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Enviar<i class="glyphicon glyphicon-download-alt button-icon-right" data-position="right"></i>
                     </button>
                 </div>
-                <div id="Chat" class="upage-content vertical-col left hidden"></div>
+                <div id="Chat" class="upage-content vertical-col left hidden">
+                    <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_62 section-dimension-62" data-uib="layout/card" data-ver="0">
+                        <div class="table-thing widget uib_w_63 d-margins label-text" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                            <label class="narrow-control label-top-left">Chat:</label>
+                            <textarea rows="3" class="wide-control form-control" wrap="soft" placeholder="Envie aqui sua mensagem"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn widget uib_w_65 d-margins btn-default default-graphic-text" data-uib="twitter%20bootstrap/button" data-ver="1">Enviar<i class="glyphicon glyphicon-ok button-icon-right" data-position="right"></i>
+                    </button>
+                    <div class="card_grid widget uib_w_58 wrapping-col d-margins flex-basis-58" data-uib="layout/card_grid" data-ver="0">
+                        <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_61 section-dimension-61" data-uib="layout/card" data-ver="0">
+                            <div class="card_grid widget uib_w_73 wrapping-col d-margins flex-basis-73" data-uib="layout/card_grid" data-ver="0">
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_74 section-dimension-74" data-uib="layout/card" data-ver="0">
+                                    <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_76 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                                    data-ver="0">
+                                        <img src="images/user-4.png">
+                                        <span class="uib-caption">Usuarios Online</span>
+                                    </a>
+                                </div>
+                                <div class="widget widget-container content-area vertical-col uib-card cpad-0 uib_w_75 section-dimension-75" data-uib="layout/card" data-ver="0"></div>
+                            </div>
+
+                            <div class="table-thing widget uib_w_64 d-margins label-text" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                                <label class="narrow-control label-top-left">Sugestões:</label>
+                                <textarea rows="3" class="wide-control form-control" wrap="soft" placeholder="Coloque sua Suguestão"></textarea>
+                            </div>
+                            <button class="btn widget uib_w_66 d-margins default-graphic-text btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Enviar<i class="glyphicon glyphicon-ok button-icon-right" data-position="right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal outer-element uib_w_71" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Usuarios Online</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="col uib_col_13 single-col" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <div class="panel widget uib_w_72 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-0" data-parent="#null">Collapsible</a>
+       </h4>
+                                        </div>
+                                        <div id="bs-accordion-group-0" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div class="col uib_col_14 single-col" data-uib="layout/col" data-ver="0">
+                                                    <div class="widget-container content-area vertical-col">
+                                                        <span class="uib_shim"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

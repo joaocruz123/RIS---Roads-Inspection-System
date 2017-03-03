@@ -40,11 +40,7 @@
     
     
         /* button  .uib_w_31 */
-    $(document).on("click", ".uib_w_31", function(evt)
-    {
-         /*global activate_subpage */
-         activate_subpage("#page_87_79"); 
-    });
+    
     
         /* button  .uib_w_14 */
     
@@ -95,6 +91,47 @@
     {
          /*global activate_subpage */
          activate_subpage("#denuncia"); 
+    });
+    
+        /* graphic button  Usuarios Online */
+    $(document).on("click", ".uib_w_70", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $(".uib_w_71").modal("toggle");  
+    });
+    
+        /* graphic button  Usuarios Online */
+    $(document).on("click", ".uib_w_76", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $(".uib_w_71").modal("toggle");  
+    });
+    
+        /* graphic button  Chat */
+    $(document).on("click", ".uib_w_41", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#Chat"); 
+    });
+    
+        /* button  .uib_w_31 */
+    $(document).on("click", ".uib_w_31", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#painel_user"); 
+    });
+    
+        /* button  .uib_w_77 */
+    $(document).on("click", ".uib_w_77", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#principal"); 
     });
     
     }
