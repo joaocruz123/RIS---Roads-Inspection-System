@@ -80,11 +80,7 @@
     });
     
         /* graphic button  Localização do Ônibus */
-    $(document).on("click", ".uib_w_39", function(evt)
-    {
-         /*global activate_subpage */
-         activate_subpage("#localizacao"); 
-    });
+    
     
         /* graphic button  Denúncia */
     $(document).on("click", ".uib_w_40", function(evt)
@@ -132,6 +128,20 @@
     {
          /*global activate_subpage */
          activate_subpage("#principal"); 
+    });
+    
+        /* button  .uib_w_79 */
+    $(document).on("click", ".uib_w_79", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#localizacao"); 
+    });
+    
+        /* graphic button  Localização do Ônibus */
+    $(document).on("click", ".uib_w_39", function(evt)
+    {
+         /*global activate_subpage */
+         activate_subpage("#select-localizacao"); 
     });
     
     }
